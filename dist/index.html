@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<body>
+    <div id="content">
+        <div class="form-wrapper" display="none">
+            <div class="form-container">
+                <form class="form-content" id="form">
+                    <h2>New Todo</h2>
+                    <label for="title">Todo Name:</label>
+                    <input type="text" name="title" id="title"><br>
+                    <label for="description">Description:</label>
+                    <textarea name="description" id="description" cols="30" rows="6"></textarea><br>
+                    <label for="priority">Priority:</label>
+                    <select name="priority" id="priority"><br>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option></select><br>
+                    <label for="due-date">Due date:</label>
+                    <input type="date" id="due-date" name="due-date"><br>    
+                    <div class="form-buttons">
+                        <button type="button" class="cancel">Cancel</button>
+                        <input type="submit" class="submit" value="Submit">
+                    </div>    
+                </form>
+            </div>        
+        </div>
+        <div class="header">
+            <div class="header-title">
+                <h1>Todos</h1>
+            </div>
+            <div class="searchbox">
+                <input type="text" placeholder="Search" name="searchBar" id="searchBar">
+            </div>
+        </div>
+        <div class="main">
+            <div class="project-bar">
+                <h2>Project List</h2>
+            <label for="new-project">New Project:</label>
+            <input type="text" name="new-project" id="new-project"><br>
+            <button type="button" class="delete-project">Delete Selected Project</button>
+    
+            </div>
+            <div class="list-body">
+                <div class="list-header">
+                    <h2 class='project-title'>Project Title</h2>
+                    <p class="remaining-tasks">0 remaining todos</p>
+                </div>
+                <div class="todo-list">
+                    <div class="todo-container">
+                        <div class="todo-content">
+                            <input type="checkbox" name="done" id="done">
+                            "Title", "Description", "Due Date"
+                            <button type="button" class="edit">Edit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-buttons">
+                    <button type="button" class="add-new-todo">Add New Todo</button>
+                    <button type="button" class="clear-completed">Clear Completed Todos</button>
+    
+
+                </div>
+        </div>
+    </div>
+
+    <script src="bundle.js"></script>
+</body>
+</html>

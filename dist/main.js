@@ -1,0 +1,1 @@
+(()=>{console.log("high");const t=document.querySelector("#content"),e=(t,e,...s)=>{const i=document.createElement(t);return e&&i.classList.add(e),s.forEach((t=>{"string"==typeof t?i.innerText=t:i.appendChild(t)})),i},s=e("div","testClass","this is a test",e("div","childClass","this is a child of test"));t.appendChild(s)})();
