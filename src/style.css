@@ -78,13 +78,18 @@ body {
     padding: 12px;
 }
 
-.tab {
+.tab,
+.tabva {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box
 }
 
-.tab button {
+.tab button,
+.tabva button {
+    box-sizing: border-box;
+    width: 100%;
     background-color: inherit;
     float: left;
     border: none;
@@ -98,7 +103,8 @@ body {
     background-color: #ddd;
 }
 
-.tab button.active {
+.tab button.active,
+.tabva button.active {
     background-color: #ccc;
   }
 
